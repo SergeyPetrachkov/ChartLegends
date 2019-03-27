@@ -9,14 +9,10 @@
 import UIKit
 
 public enum CellType {
-    case plainText
-    case shapeText
     case custom(CellTypeWrapper)
     
     public var type: UICollectionViewCell.Type {
         switch self {
-        case .plainText: return TextLabelChartLegendCell.self
-        case .shapeText: return DefaultChartLegendCell.self
         case .custom(let typeWrapper): return typeWrapper.type
         }
     }

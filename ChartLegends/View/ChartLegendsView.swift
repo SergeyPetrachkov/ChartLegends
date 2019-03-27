@@ -151,20 +151,7 @@ open class ChartLegendsView: UIView {
     }
     
     fileprivate func defaultCellConfigurator(cellType: CellType) -> CellConfigurator? {
-        switch cellType {
-        case .plainText:
-            return {[weak self] cell, legend, indexPath in guard let weakSelf = self else {return}
-                let textLabelCell = cell as! TextLabelChartLegendCell
-                textLabelCell.legend = weakSelf.legends[indexPath.row]
-            }
-        case .shapeText:
-            return {[weak self] cell, legend, indexPath in guard let weakSelf = self else {return}
-                let shapeTextCell = cell as! DefaultChartLegendCell
-                shapeTextCell.legend = weakSelf.legends[indexPath.row] as? ShapeChartLegend
-            }
-            
-        default: return nil
-        }
+      return nil
     }
     
     fileprivate func register(cellType: CellType) {
@@ -189,11 +176,6 @@ open class ChartLegendsView: UIView {
     
     fileprivate func initCellTypeWithLegendsIfNotSet() {
         if cellType == nil {
-            if legends is [ShapeChartLegend] {
-                cellType = .shapeText
-            } else if legends is [PlainChartLegend] {
-                cellType = .plainText
-            }
             if let cellType = cellType {
                 configure(cellType: cellType)
             }

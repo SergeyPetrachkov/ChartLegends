@@ -16,10 +16,6 @@
 		6AC1CC841E1BE49700120720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC7E1E1BE49700120720 /* ViewController.swift */; };
 		6AC1CCBF1E1BEAEE00120720 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC991E1BEAAB00120720 /* CGRect.swift */; };
 		6AC1CCC01E1BEAEE00120720 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC9A1E1BEAAB00120720 /* ReusableView.swift */; };
-		6AC1CCC11E1BEAF700120720 /* DefaultChartLegendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC931E1BEAAB00120720 /* DefaultChartLegendCell.swift */; };
-		6AC1CCC21E1BEAF700120720 /* DefaultChartLegendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CC941E1BEAAB00120720 /* DefaultChartLegendCell.xib */; };
-		6AC1CCC31E1BEAFA00120720 /* TextLabelChartLegendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC901E1BEAAB00120720 /* TextLabelChartLegendCell.swift */; };
-		6AC1CCC41E1BEAFA00120720 /* TextLabelChartLegendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CC911E1BEAAB00120720 /* TextLabelChartLegendCell.xib */; };
 		6AC1CCC51E1BEAFD00120720 /* ChartLegendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC8D1E1BEAAB00120720 /* ChartLegendCell.swift */; };
 		6AC1CCC61E1BEAFD00120720 /* ChartLegendsConstraintConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC8E1E1BEAAB00120720 /* ChartLegendsConstraintConstants.swift */; };
 		6AC1CCC71E1BEB0200120720 /* PlainChartLegend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CCA21E1BEAAB00120720 /* PlainChartLegend.swift */; };
@@ -70,10 +66,6 @@
 		6AC1CC8A1E1BE8BC00120720 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AC1CC8D1E1BEAAB00120720 /* ChartLegendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLegendCell.swift; sourceTree = "<group>"; };
 		6AC1CC8E1E1BEAAB00120720 /* ChartLegendsConstraintConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLegendsConstraintConstants.swift; sourceTree = "<group>"; };
-		6AC1CC901E1BEAAB00120720 /* TextLabelChartLegendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLabelChartLegendCell.swift; sourceTree = "<group>"; };
-		6AC1CC911E1BEAAB00120720 /* TextLabelChartLegendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextLabelChartLegendCell.xib; sourceTree = "<group>"; };
-		6AC1CC931E1BEAAB00120720 /* DefaultChartLegendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultChartLegendCell.swift; sourceTree = "<group>"; };
-		6AC1CC941E1BEAAB00120720 /* DefaultChartLegendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultChartLegendCell.xib; sourceTree = "<group>"; };
 		6AC1CC961E1BEAAB00120720 /* CellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
 		6AC1CC971E1BEAAB00120720 /* ChartLegendsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLegendsLayout.swift; sourceTree = "<group>"; };
 		6AC1CC991E1BEAAB00120720 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
@@ -168,29 +160,9 @@
 			children = (
 				6AC1CC8D1E1BEAAB00120720 /* ChartLegendCell.swift */,
 				6AC1CC8E1E1BEAAB00120720 /* ChartLegendsConstraintConstants.swift */,
-				6AC1CC8F1E1BEAAB00120720 /* PlainText */,
-				6AC1CC921E1BEAAB00120720 /* ShapeText */,
 			);
 			name = Cell;
 			path = ChartLegends/Cell;
-			sourceTree = "<group>";
-		};
-		6AC1CC8F1E1BEAAB00120720 /* PlainText */ = {
-			isa = PBXGroup;
-			children = (
-				6AC1CC901E1BEAAB00120720 /* TextLabelChartLegendCell.swift */,
-				6AC1CC911E1BEAAB00120720 /* TextLabelChartLegendCell.xib */,
-			);
-			path = PlainText;
-			sourceTree = "<group>";
-		};
-		6AC1CC921E1BEAAB00120720 /* ShapeText */ = {
-			isa = PBXGroup;
-			children = (
-				6AC1CC931E1BEAAB00120720 /* DefaultChartLegendCell.swift */,
-				6AC1CC941E1BEAAB00120720 /* DefaultChartLegendCell.xib */,
-			);
-			path = ShapeText;
 			sourceTree = "<group>";
 		};
 		6AC1CC951E1BEAAB00120720 /* Enum */ = {
@@ -372,8 +344,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC1CCC21E1BEAF700120720 /* DefaultChartLegendCell.xib in Resources */,
-				6AC1CCC41E1BEAFA00120720 /* TextLabelChartLegendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,14 +371,12 @@
 				6AC1CCC81E1BEB0200120720 /* ShapeChartLegend.swift in Sources */,
 				6AC1CCD01E1BEB1400120720 /* ChartLegendsView+InitHelpers.swift in Sources */,
 				6AC1CCCF1E1BEB1400120720 /* ChartLegendsDelegate.swift in Sources */,
-				6AC1CCC11E1BEAF700120720 /* DefaultChartLegendCell.swift in Sources */,
 				6AC1CCD11E1BEB1400120720 /* ChartLegendsView.swift in Sources */,
 				6AC1CCBF1E1BEAEE00120720 /* CGRect.swift in Sources */,
 				6AC1CCCB1E1BEB0800120720 /* DefaultShapeChartLegend.swift in Sources */,
 				6AC1CCCC1E1BEB0C00120720 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				6AC1CCC01E1BEAEE00120720 /* ReusableView.swift in Sources */,
 				6AC1CCCE1E1BEB1000120720 /* ChartLegendsLayout.swift in Sources */,
-				6AC1CCC31E1BEAFA00120720 /* TextLabelChartLegendCell.swift in Sources */,
 				6AC1CCC91E1BEB0800120720 /* ChartLegend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
